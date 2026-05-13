@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        body{background: #DFE1FF;}
+        /* #flex{
+          display: flex;
+          
+        } */
+    </style>
+  </head>
+  <body>
+    
+<nav class="bg-white border-default rounded-b-[30px] m-auto" style="width:97%">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="logo.png" class="h-7" alt="Flowbite Logo" />
+        <!-- <span class="self-center text-xl text-heading font-semibold whitespace-nowrap"></span> -->
+    </a>
+    <button id="navbarButton" data-collapse-toggle="navbar-multi-level-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary" aria-controls="navbar-multi-level-dropdown" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg>
+    </button>
+    <div class="hidden w-full md:text-sm md:block md:w-auto" id="navbar-multi-level-dropdown">
+      <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 md:relative right-20 border border-default rounded-base bg-neutral-secondary-soft md:space-x-5 rtl:space-x-reverse md:flex-row md:items-center md:mt-0 md:border-0 md:bg-neutral-primary">
+        <li>
+          <a href="#" class="block py-2 px-3 text-[#A69FE5] md:hover:text-[#2E4093] md:hover:bg-white hover:bg-[#2E4093] hover:text-white" bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0" aria-current="page">Acceuil</a>
+        </li>
+        <li>
+            <!-- <button id="multiLevelDropdownButton" data-dropdown-toggle="multi-dropdown" class="flex items-center justify-between w-full py-2 px-3 rounded font-medium text-heading md:w-auto hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">
+              Dropdown 
+              <svg class="w-4 h-4 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
+          </button> -->
+            <!-- Dropdown menu -->
+            <!-- <div id="multi-dropdown" class="z-10 hidden bg-neutral-primary-medium border border-default-medium rounded-base shadow-lg w-44">
+                <ul class="p-2 text-sm text-body font-medium" aria-labelledby="multiLevelDropdownButton">
+                  <li>
+                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Dashboard</a>
+                  </li>
+                  <li>
+                    <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">
+                      Dropdown
+                      <svg class="h-4 w-4 ms-auto rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/></svg>
+                     </button>
+                      <div id="doubleDropdown" class="z-10 hidden bg-neutral-primary-medium border border-default-medium rounded-base shadow-lg w-44">
+                        <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownMultiLevelButton">
+                           <li>
+                             <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Overview</a>
+                           </li>
+                            <li>
+                             <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">My downloads</a>
+                           </li>
+                           <li>
+                            <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Billing</a>
+                           </li>
+                          <li>
+                             <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Rewards</a>
+                          </li>
+                         </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Earnings</a>
+                  </li>
+                  <li>
+                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Sign out</a>
+                  </li>
+                </ul>
+            </div> -->
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent text-[#2E4093] md:hover:text-[#2E4093] md:hover:bg-white hover:bg-[#2E4093] hover:text-white"> <strong> Nos Expositions</strong></a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent text-[#A69FE5] md:hover:text-[#2E4093] md:hover:bg-white hover:bg-[#2E4093] hover:text-white">Evènement</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent text-[#A69FE5] md:hover:text-[#2E4093] md:hover:bg-white hover:bg-[#2E4093] hover:text-white">Billetterie</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent text-[#A69FE5] md:hover:text-[#2E4093] md:hover:bg-white hover:bg-[#2E4093] hover:text-white">A Propos</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent text-[#A69FE5] md:hover:text-[#2E4093] md:hover:bg-white hover:bg-[#2E4093] hover:text-white">Billetterie</a>
+        </li>
+
+          <div class="flex flex-col md:flex-row md:relative left-20">
+         <button class="bg-[#DAD7F4] text-[#2E4093] w-35 rounded-[50px] cursor-pointer">Dashboard Admin</button>
+        <button class="bg-[#2E4093] text-white w-40 mt-3 pt-0 pb-0 md:pt-2 md:pb-2 cursor-pointer rounded-[50px] md:mt-auto md:ml-3 p-2">Réserver Une Visite</button>
+        </div>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="w-[97%] mt-5" style="width:97%">
+
+    <div class="ml-4">
+        <img class="rounded-[20px]" src="a18.png" alt="the background image">
+        <div class="relative bottom-15 pl-5">
+        <button class="bg-[#24378D] rounded-[25px] mr-5 pl-2 pr-2 text-white text-xs py-1 cursor-pointer hover:bg-[#0000ff]">Retour Aux Oeuvres</button>
+        <p class="text-white text-center">Déplacer pour explorer et Scanner pour découvrir.</p>
+        <img class="float-right relative h-20 w-20 bottom-65 md:bottom-200 md:h-90 md:w-90 mr-5 rounded-[10px]" src="a17.png" alt="the bar-code">
+        </div>
+    </div>
+
+</section>
+
+<footer class="m-auto w-[97%] h-95 md:h-50 bg-white rounded-t-[15px] relative md:top-30" style="width:97%">
+
+
+<div class="text-center items-center md:justify-left md:text-left md:relative md:right-50 md:items-center flex justify-center">
+<img class="w-40 h-20 m-4 md:m-0" src="logo2.png" alt="footer logo">
+</div>
+
+<div class="flex items-center flex-col md:flex-row md:justify-between ml-1 mt-5 w-full border-b-1 md:absolute md:max-w-7xl md:mx-auto">
+
+  
+
+  <a class="flex mb-3 text-[#24378D]" href="mailto:melokaanagency@gmail.com">
+    <img class="w-10 h-10 mr-1" src="icon-9.png" alt="email logo">
+    <span class="break-all">melokaanagency@gmail.com</span>
+  </a>
+
+  <a class="flex mb-3 text-[#24378D]" href="mailto:melokaanagency@gmail.com">
+    <img class="w-10 h-10 mr-1" src="icon-10.png" alt="email logo">
+    <span class="break-all">melokaanagency@gmail.com</span>
+  </a>
+
+  <a class="flex mb-3 text-[#24378D]" href="mailto:melokaanagency@gmail.com">
+    <img class="w-10 h-10 mr-1" src="icon-11.png" alt="email logo">
+    <span class="break-all">melokaanagency@gmail.com</span>
+  </a>
+
+  <div class="flex flex-row md:shrink-0">
+    <a href="">
+      <img class="w-10 h-10 mr-1 mb-3" src="icon-12.png" alt="social icon">
+    </a>
+    <a href="">
+      <img class="w-10 h-10 mr-1" src="icon-13.png" alt="social icon">
+    </a>
+  </div>
+
+</div>
+
+
+  <p class=" text-center md:text-left md:relative md:top-20">Melokaan Creative Agency © 2026 - All rights Reserved</p>
+
+</footer>
+
+<script>
+    
+
+               document.addEventListener('DOMContentLoaded', () => {
+            const firstDiv = document.getElementById('navbar-multi-level-dropdown');
+      const navbarButton = document.getElementById('navbarButton');
+   navbarButton.style.cursor = 'pointer';
+  navbarButton.onclick = () => {
+firstDiv.classList.toggle('hidden');
+    }
+
+  const buttonNavbar2 = document.getElementById('navbarButton2');
+  const navbar2Div = document.getElementById('navbar2Div');
+
+  buttonNavbar2.style.cursor = 'pointer';
+  buttonNavbar2.onclick = () => {
+    navbar2Div.classList.toggle('hidden');
+  }
+
+  const multiLevelDropdownButton = document.getElementById('multiLevelDropdownButton');
+  const multipleDropDownDiv = document.getElementById('multi-dropdown');
+
+  multiLevelDropdownButton.onclick = () => {
+    multipleDropDownDiv.classList.toggle('hidden')
+  }
+
+
+
+    })
+    
+</script>
+  </body>
+</html>

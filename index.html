@@ -1,0 +1,421 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        body{background: #DFE1FF;}
+        /* #flex{
+          display: flex;
+          
+        } */
+    </style>
+  </head>
+  <body>
+    
+<nav class="bg-white border-default rounded-b-[30px] m-auto" style="width:97%">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="logo.png" class="h-7" alt="Flowbite Logo" />
+        <!-- <span class="self-center text-xl text-heading font-semibold whitespace-nowrap"></span> -->
+    </a>
+    <button id="navbarButton" data-collapse-toggle="navbar-multi-level-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary" aria-controls="navbar-multi-level-dropdown" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg>
+    </button>
+    <div class="hidden w-full md:text-sm md:block md:w-auto" id="navbar-multi-level-dropdown">
+      <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 md:relative right-20 border border-default rounded-base bg-neutral-secondary-soft md:space-x-5 rtl:space-x-reverse md:flex-row md:items-center md:mt-0 md:border-0 md:bg-neutral-primary">
+        <li>
+          <a href="#" class="block py-2 px-3 text-[#A69FE5] md:hover:text-[#2E4093] md:hover:bg-white hover:bg-[#2E4093] hover:text-white" bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0" aria-current="page">Acceuil</a>
+        </li>
+        <li>
+            <!-- <button id="multiLevelDropdownButton" data-dropdown-toggle="multi-dropdown" class="flex items-center justify-between w-full py-2 px-3 rounded font-medium text-heading md:w-auto hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">
+              Dropdown 
+              <svg class="w-4 h-4 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
+          </button> -->
+            <!-- Dropdown menu -->
+            <!-- <div id="multi-dropdown" class="z-10 hidden bg-neutral-primary-medium border border-default-medium rounded-base shadow-lg w-44">
+                <ul class="p-2 text-sm text-body font-medium" aria-labelledby="multiLevelDropdownButton">
+                  <li>
+                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Dashboard</a>
+                  </li>
+                  <li>
+                    <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">
+                      Dropdown
+                      <svg class="h-4 w-4 ms-auto rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/></svg>
+                     </button>
+                      <div id="doubleDropdown" class="z-10 hidden bg-neutral-primary-medium border border-default-medium rounded-base shadow-lg w-44">
+                        <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownMultiLevelButton">
+                           <li>
+                             <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Overview</a>
+                           </li>
+                            <li>
+                             <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">My downloads</a>
+                           </li>
+                           <li>
+                            <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Billing</a>
+                           </li>
+                          <li>
+                             <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Rewards</a>
+                          </li>
+                         </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Earnings</a>
+                  </li>
+                  <li>
+                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Sign out</a>
+                  </li>
+                </ul>
+            </div> -->
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent text-[#2E4093] md:hover:text-[#2E4093] md:hover:bg-white hover:bg-[#2E4093] hover:text-white"> <strong> Nos Expositions</strong></a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent text-[#A69FE5] md:hover:text-[#2E4093] md:hover:bg-white hover:bg-[#2E4093] hover:text-white">Evènement</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent text-[#A69FE5] md:hover:text-[#2E4093] md:hover:bg-white hover:bg-[#2E4093] hover:text-white">Billetterie</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent text-[#A69FE5] md:hover:text-[#2E4093] md:hover:bg-white hover:bg-[#2E4093] hover:text-white">A Propos</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent text-[#A69FE5] md:hover:text-[#2E4093] md:hover:bg-white hover:bg-[#2E4093] hover:text-white">Billetterie</a>
+        </li>
+
+          <div class="flex flex-col md:flex-row md:relative left-20">
+         <button class="bg-[#DAD7F4] text-[#2E4093] w-35 rounded-[50px] cursor-pointer">Dashboard Admin</button>
+        <button class="bg-[#2E4093] text-white w-40 mt-3 pt-0 pb-0 md:pt-2 md:pb-2 cursor-pointer rounded-[50px] md:mt-auto md:ml-3 p-2">Réserver Une Visite</button>
+        </div>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section>
+<div>
+<img class="flex rounded-xl w-[97%] ml-2 md:ml-5" src="a4.png">
+</div>
+
+  <nav class="bg-white border-default rounded-[35px] m-auto" style="width:97%">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+
+    <button id="navbarButton2" data-collapse-toggle="navbar-multi-level-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary" aria-controls="navbar-multi-level-dropdown" aria-expanded="false">
+ <span class="sr-only">Open main menu</span>
+ <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg>
+ </button>
+ <div class="hidden w-full md:text-sm md:block md:w-auto md:ml-50 " id="navbar2Div">
+ <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 md:relative right-20 border border-default rounded-base bg-neutral-secondary-soft md:space-x-5 rtl:space-x-reverse md:flex-row md:items-center md:mt-0 md:border-0 md:bg-neutral-primary">
+  <li class="md:border-r-1 border-black">
+ <a href="#" class="block py-2 px-3 text-[#A69FE5] md:pr-25 md:pr-0 md:hover:text-[#2E4093] md:hover:bg-white hover:bg-[#2E4093] hover:text-white bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0" aria-current="page">Tous les Œuvres </a>
+  </li>
+        <li>
+       <ul class="flex flex-col font-medium p-4 md:p-0  mt-4 md:relative right-20 border border-default rounded-base bg-neutral-secondary-soft md:space-x-5 rtl:space-x-reverse md:flex-row md:items-center md:mt-0 md:border-0 md:bg-neutral-primary">
+        <li>
+            <a href="#" class="block py-2 px-3 text-[#A69FE5] md:hover:text-[#2E4093] md:hover:bg-white hover:bg-[#2E4093] hover:text-white bg-brand rounded md:bg-transparent md:text-[#2E4093] md:p-0 md:p-0" aria-current="page"> <strong> Tableaux </strong></a>
+                </li>
+                <li>
+         
+                </li>
+                  <li>
+                 <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent text-[#A69FE5] md:hover:text-[#2E4093] md:hover:bg-white hover:bg-[#2E4093] hover:text-white">Sculptures</a>
+               </li>
+               <li>
+                 <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent text-[#A69FE5] md:hover:text-[#2E4093] md:hover:bg-white hover:bg-[#2E4093] hover:text-white">Masques</a>
+              </li>
+               <li>   
+                <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent text-[#A69FE5] md:hover:text-[#2E4093] md:hover:bg-white hover:bg-[#2E4093] hover:text-white">Bijoux</a>
+              </li>
+              <li>
+          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent text-[#A69FE5] md:hover:text-[#2E4093] md:hover:bg-white hover:bg-[#2E4093] hover:text-white">Manuscrits</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent text-[#A69FE5] md:hover:text-[#2E4093] md:hover:bg-white hover:bg-[#2E4093] hover:text-white">Textiles</a>
+        </li>
+
+   <div class="flex flex-col md:flex-row md:relative left-20">
+   <button id="multiLevelDropdownButton"  data-dropdown-toggle="multi-dropdown" class="flex items-center justify-between w-full py-2 px-3 rounded font-medium text-heading md:w-auto hover:bg-neutral-tertiary md:ml-35 md:border-0 md:hover:text-fg-brand bg-[#24378D] pl-3 text-white rounded-[20px]">
+    Sénégal 
+    <svg class="w-7 h-7 ms-1.5 pr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
+     </button>
+            <!-- Dropdown menu -->
+              <div id="multi-dropdown" class="z-10 hidden bg-neutral-primary-medium border border-default-medium rounded-base shadow-lg w-44">
+              <ul class="p-2 text-sm text-body font-medium" aria-labelledby="multiLevelDropdownButton">
+                <li>
+                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Dashboard</a>
+                  </li>
+                  <li>
+                    <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">
+                      Dropdown
+                      <svg class="h-4 w-4 ms-auto rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/></svg>
+                     </button>
+                      <div id="doubleDropdown" class="z-10 hidden bg-neutral-primary-medium border border-default-medium rounded-base shadow-lg w-44">
+                        <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownMultiLevelButton">
+                           <li>
+                             <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Overview</a>
+                           </li>
+                            <li>
+                             <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">My downloads</a>
+                           </li>
+                           <li>
+                            <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Billing</a>
+                           </li>
+                          <li>
+                             <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Rewards</a>
+                          </li>
+                         </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Earnings</a>
+                  </li>
+                  <li>
+                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Sign out</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+      </ul>
+    </div>
+  </div>
+</nav>
+</section>
+
+<section class="m-auto bg-[#140A78] rounded-[15px]" style="width:97%">
+  
+<div class="py-5 md:flex">
+  <div>
+  <img class="w-[90%] h-60 rounded-[15px] mb-5 ml-5 hover:w-[93%] hover:h-63 cursor-pointer " src="a3.jpeg">
+  <div class="ml-5">
+     <button class="bg-[#24378D] rounded-[25px] mr-5 pl-2 pr-2 text-white flex items-center text-xs py-1 float-right cursor-pointer hover:bg-[#0000ff]">Voir L’Œuvre</button>
+    <button class="bg-[#24378D] rounded-[17px] pl-2 pr-2 text-white cursor-pointer hover:bg-[#0000ff]">France</button>
+    <div class="flex">
+    <h1 class="text-xl font-bold text-white mr-3 text-sm">La Joconde <br> Léonard de Vinci</h1>
+    </div>
+  </div>
+    
+  </div>
+
+  <div>
+    <img class="w-[90%] h-60 rounded-[15px] mb-5 ml-5 mt-3 hover:w-[93%] hover:h-63 cursor-pointer" src="a5.jfif" alt="The first masqured">
+    <div class="ml-5">
+     <button class="bg-[#24378D] rounded-[25px] mr-5 pl-2 pr-2 text-white flex items-center text-xs py-1  float-right cursor-pointer hover:bg-[#0000ff]">Voir L’Œuvre</button>
+    <button class="bg-[#24378D] rounded-[17px] pl-2 pr-2 text-white cursor-pointer hover:bg-[#0000ff]">Mali</button>
+    <div class="flex">
+    <h1 class="text-xl font-bold text-white mr-3 text-sm">Le Masque Kanaga, <br> lien entre ciel et terre.</h1>
+    </div>
+  </div>
+  </div>
+    
+  <div>
+    <img class="w-[90%] h-60 rounded-[15px] mb-5 ml-5 mt-3 hover:w-[93%] hover:h-63 cursor-pointer" src="a10.png" alt="The first masqured">
+    <div class="ml-5">
+     <button class="bg-[#24378D] rounded-[25px] mr-5 pl-2 pr-2 text-white flex items-center text-xs py-1  float-right cursor-pointer hover:bg-[#0000ff]">Voir L’Œuvre</button>
+    <button class="bg-[#24378D] rounded-[17px] pl-2 pr-2 text-white cursor-pointer hover:bg-[#0000ff]">Éthiopie</button>
+    <div class="flex">
+    <h1 class="text-xl font-bold text-white mr-3 text-sm">La Croix de Lalibela, <br> flamme de la foi.</h1>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+<div class="py-5 md:flex">
+  <div>
+  <img class="w-[90%] h-60 rounded-[15px] mb-5 ml-5 hover:w-[93%] hover:h-63 cursor-pointer" src="a11.png" alt="Egyptian empire image">
+  <div class="ml-5">
+    <button class="bg-[#24378D] rounded-[17px] pl-2 pr-2 text-white cursor-pointer hover:bg-[#0000ff]">Égypte</button>
+    <div class="flex">
+    <h1 class="text-xl font-bold text-white mr-3 text-sm">Le Masque de Toutankhamon, <br> éclat d’éternité pharaonique.</h1>
+    </div>
+    <div class="md:w-[90%] md:h-8 md:bg-white md:rounded-t-[15px]"></div>
+  </div>
+  </div>
+
+  <div>
+    <img class="w-[90%] h-60 rounded-[15px] mb-5 ml-5 mt-3 hover:w-[93%] hover:h-63 cursor-pointer" src="a12.png" alt="The first masqured">
+    <div class="ml-5">
+
+    <button class="bg-[#24378D] rounded-[17px] pl-2 pr-2 text-white cursor-pointer hover:bg-[#0000ff]">Afrique du Sud</button>
+    <div class="flex">
+    <h1 class="text-xl font-bold text-white mr-3 text-sm">L’Art Ndebele, langage coloré <br> de liberté et d’identité.</h1>
+    </div>
+    <div class="md:w-[90%] md:h-8 md:bg-white md:rounded-t-[15px]"></div>
+  </div>
+  </div>
+    
+  <div>
+    <img class="w-[90%] h-60 rounded-[15px] mb-5 ml-5 mt-3 hover:w-[93%] hover:h-63 cursor-pointer" src="a13.png" alt="The first masqured">
+    <div class="ml-5">
+    <button class="bg-[#24378D] rounded-[17px] pl-2 pr-2 text-white cursor-pointer hover:bg-[#0000ff]">Nigéria</button>
+    <div class="flex">
+    <h1 class="text-xl font-bold text-white mr-3 text-sm">La Tête d’Ife, incarnation <br> de la royauté divine.</h1>
+    </div>
+    <div class="md:w-[90%] md:h-8 md:bg-white md:rounded-t-[15px]"></div>
+  </div>
+  </div>
+</div>
+</section>
+
+<section class="m-auto" style="width:97%">
+<div>
+  <h1 class="text-xl font-bold text-[#140A78] text-center">Plongez dans l’actualité du <br> Musée des Civilisations Noires</h1>
+  <p class="text-center">Expositions, innovations, expériences digitales <br>
+    et rencontres avec ceux qui font vivre la culture africaine d’aujourd’hui.</p>
+</div>
+
+<div class="w-[100%] h-[50%] bg-[#140A78] rounded-[17px]">
+  <div>
+  <div class="ml-10 text-white mr-5 md:ml-40">
+  <h1 class="text-xl font-bold my-10 pt-10">Kehinde Wiley <br> Dédale du pouvoir</h1>
+  <p class="mb-10">L'artiste américain Kehinde Wiley a présenté son <br> exposition « Dédale du pouvoir » au Musée...</p>
+  <button class="rounded-[25px] pl-2 pr-2 text-white mb-10 text-xs py-1 border-1 border-white cursor-pointer hover:bg-[#0000ff]">En Savoir Plus</button> 
+
+  </div>
+<div class="md:float-right m-auto md:relative md:bottom-75">
+<img class="w-[100%] h-50 rounded-[17px] m-auto md:w-150 md:h-75" src="a14.png" alt="The man with traditional wrapper">
+</div>
+</div>
+
+</div>
+
+</section>
+
+<div class="m-auto"></div>
+
+<section  class="m-auto my-7" style="width:97%">
+
+
+<div class="w-full max-w-7xl mx-auto px-4 flex flex-col md:flex-row gap-6 md:absolute">
+
+  
+  <div class="w-full md:flex-1 bg-white rounded-[15px] p-4 flex gap-4">
+    
+    <img class="w-32 h-32 object-cover rounded-[15px]" src="a15.png" alt="">
+
+    <div class="flex flex-col justify-between w-full">
+      <div>
+        <h1 class="text-sm font-bold text-[#140A78] relative right-2">
+          Journées Culturelles <br> Panafricaines
+        </h1>
+
+        <p class="text-sm mt-2 relative right-2">
+          Quelques images des activités du week-end dernier au Musée 
+          des Civilisations noires (MCN) notamment celles...
+        </p>
+      </div>
+
+      <button class="bg-[#24378D] mt-3 self-end px-1.5 md:px-5 py-1 text-white text-[10px] rounded-[25px] hover:bg-blue-700 md:w-auto cursor-pointer relative right-3 w-25">
+        En Savoir Plus
+      </button>
+    </div>
+
+  </div>
+
+ 
+  <div class="w-full mx-auto md:flex-1 bg-white rounded-[15px] p-4 flex gap-4">
+    
+    <img class="w-32 h-32 object-cover rounded-[15px]" src="a16.png" alt="">
+
+    <div class="flex flex-col justify-between w-full">
+      <div>
+        <h1 class="text-sm font-bold text-[#140A78] relative right-2">
+          Panafricanisme <br> &  Palestine
+        </h1>
+
+        <p class="text-sm mx-auto mt-2 relative right-2">
+        Comment penser ensemble l’unité africaine et l’émancipation du <br>
+         peuple palestinien ? Le Musée des Civilisations noires...
+        </p>
+      </div>
+
+      <button class="bg-[#24378D] md:w-auto mt-3 cursor-pointer self-end px-2 md:px-5 py-1 text-white text-[10px] md:text-auto rounded-[25px] hover:bg-blue-700 relative right-2 w-25">
+        En Savoir Plus
+      </button>
+    </div>
+
+  </div>
+
+</div>
+
+</section>
+
+<footer class="m-auto w-[97%] h-95 md:h-50 bg-white rounded-t-[15px] md:relative top-60" style="width:97%">
+
+
+<div class="text-center items-center md:justify-left md:text-left md:relative md:right-50 md:items-center flex justify-center">
+<img class="w-40 h-20 m-4 md:m-0" src="logo2.png" alt="footer logo">
+</div>
+
+<div class="flex items-center flex-col md:flex-row md:justify-between ml-1 mt-5 w-full border-b-1 md:absolute md:max-w-7xl md:mx-auto">
+
+  
+
+  <a class="flex mb-3 text-[#24378D]" href="mailto:melokaanagency@gmail.com">
+    <img class="w-10 h-10 mr-1" src="icon-9.png" alt="email logo">
+    <span class="break-all">melokaanagency@gmail.com</span>
+  </a>
+
+  <a class="flex mb-3 text-[#24378D]" href="mailto:melokaanagency@gmail.com">
+    <img class="w-10 h-10 mr-1" src="icon-10.png" alt="email logo">
+    <span class="break-all">melokaanagency@gmail.com</span>
+  </a>
+
+  <a class="flex mb-3 text-[#24378D]" href="mailto:melokaanagency@gmail.com">
+    <img class="w-10 h-10 mr-1" src="icon-11.png" alt="email logo">
+    <span class="break-all">melokaanagency@gmail.com</span>
+  </a>
+
+  <div class="flex flex-row md:shrink-0">
+    <a href="">
+      <img class="w-10 h-10 mr-1 mb-3" src="icon-12.png" alt="social icon">
+    </a>
+    <a href="">
+      <img class="w-10 h-10 mr-1" src="icon-13.png" alt="social icon">
+    </a>
+  </div>
+
+</div>
+
+
+  <p class=" text-center md:text-left md:relative md:top-20">Melokaan Creative Agency © 2026 - All rights Reserved</p>
+
+</footer>
+
+<script>
+    
+
+               document.addEventListener('DOMContentLoaded', () => {
+            const firstDiv = document.getElementById('navbar-multi-level-dropdown');
+      const navbarButton = document.getElementById('navbarButton');
+   navbarButton.style.cursor = 'pointer';
+  navbarButton.onclick = () => {
+firstDiv.classList.toggle('hidden');
+    }
+
+  const buttonNavbar2 = document.getElementById('navbarButton2');
+  const navbar2Div = document.getElementById('navbar2Div');
+
+  buttonNavbar2.style.cursor = 'pointer';
+  buttonNavbar2.onclick = () => {
+    navbar2Div.classList.toggle('hidden');
+  }
+
+  const multiLevelDropdownButton = document.getElementById('multiLevelDropdownButton');
+  const multipleDropDownDiv = document.getElementById('multi-dropdown');
+
+  multiLevelDropdownButton.onclick = () => {
+    multipleDropDownDiv.classList.toggle('hidden')
+  }
+
+
+
+    })
+    
+</script>
+  </body>
+</html>
